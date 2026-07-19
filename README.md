@@ -102,7 +102,7 @@ const roni = {
 <div align="center">
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-business--roni.vercel.app-302b63?style=for-the-badge&logo=vercel&logoColor=white)](https://business-roni.vercel.app)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-syahroni18-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/syahroni18/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-syahronirizki-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/syahroni-rizki-a79b151b9/)
 [![GitHub](https://img.shields.io/badge/GitHub-syahronirizki-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/syahronirizki)
 
 </div>
