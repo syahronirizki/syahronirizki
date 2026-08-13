@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="220" viewBox="0 0 1000 220"
+     role="img" aria-label="Syahroni Rizki — Frontend Developer, Vue and Flutter, Indonesia">
+  <title>Syahroni Rizki — Frontend Developer</title>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f0c29"/>
+      <stop offset="52%" stop-color="#302b63"/>
+      <stop offset="100%" stop-color="#24243e"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#41b883" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#7c6cf5" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#3178c6" stop-opacity="0.9"/>
+    </linearGradient>
+    <clipPath id="plate">
+      <rect width="1000" height="220" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; }
+    .name  { font-size: 46px; font-weight: 700; fill: #ffffff; letter-spacing: .5px; }
+    .role  { font-size: 17px; font-weight: 500; fill: #b9b2e8; letter-spacing: 3.2px; }
+    .meta  { font-size: 13px; fill: #8f88bd; letter-spacing: 1.2px; }
+    /* Motion is decorative only. Nothing here may gate visibility: a renderer
+       that ignores CSS animation must still show every element. */
+    .pulse { animation: pulse 3.4s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity: .25; } 50% { opacity: .7; } }
+    @keyframes drift { to { transform: translateX(-320px); } }
+    .scroll { animation: drift 9s linear infinite; }
+    @media (prefers-reduced-motion: reduce) {
+      .pulse, .scroll { animation: none; }
+    }
+  </style>
+
+  <g clip-path="url(#plate)">
+    <rect width="1000" height="220" fill="url(#sky)"/>
+
+    <!-- Faint grid: the "canvas" a frontend gets built on. -->
+    <g stroke="#7c6cf5" stroke-opacity="0.08">
+      <path d="M0 55h1000M0 110h1000M0 165h1000"/>
+      <path d="M120 0v220M280 0v220M440 0v220M600 0v220M760 0v220M920 0v220"/>
+    </g>
+
+    <!-- Signal wave, nodding at the gesture/VFX work. Scrolls one full period. -->
+    <g class="scroll" fill="none" stroke="url(#wave)" stroke-width="2.5"
+       stroke-linecap="round" opacity="0.75">
+      <path d="M0 192q40-46 80 0t80 0q40-46 80 0t80 0q40-46 80 0t80 0q40-46 80 0t80 0
+               q40-46 80 0t80 0q40-46 80 0t80 0q40-46 80 0t80 0q40-46 80 0t80 0"/>
+    </g>
+
+    <!-- Slow-breathing motes. -->
+    <g fill="#b9b2e8">
+      <circle class="pulse" cx="838" cy="52"  r="2.5" style="animation-delay:0s"/>
+      <circle class="pulse" cx="890" cy="96"  r="1.8" style="animation-delay:.6s"/>
+      <circle class="pulse" cx="792" cy="118" r="2.1" style="animation-delay:1.2s"/>
+      <circle class="pulse" cx="932" cy="44"  r="1.5" style="animation-delay:1.8s"/>
+      <circle class="pulse" cx="864" cy="146" r="1.9" style="animation-delay:2.4s"/>
+    </g>
+
+    <!-- Accent rule anchoring the type block. -->
+    <rect x="56" y="66" width="3" height="86" rx="1.5" fill="#41b883"/>
+
+    <text class="name" x="78" y="98">Syahroni Rizki</text>
+    <text class="role" x="80" y="126">FRONTEND DEVELOPER</text>
+    <text class="meta" x="80" y="150">
+      Vue &#183; TypeScript &#183; Flutter &#183; Indonesia
+    </text>
+  </g>
+
+  <rect x="0.5" y="0.5" width="999" height="219" rx="14" fill="none"
+        stroke="#7c6cf5" stroke-opacity="0.35"/>
+</svg>

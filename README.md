@@ -1,126 +1,90 @@
-<div align="center">
+<img src="assets/header.svg" width="100%" alt="Syahroni Rizki — Frontend Developer">
 
-<!-- Dynamic header banner -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Syahroni%20Rizki&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Frontend%20Web%20Developer&descAlignY=60&descSize=20&animation=fadeIn" />
+### Hi, I'm Roni 👋
 
-</div>
+I build the screens people actually have to use at work — the ones that get opened forty times a shift, on a cheap tablet, with one hand, in a hurry. Right now that means **healthcare software** at PT Nuansa Cerah Informasi, where a form that takes one tap too many is a real problem for a real nurse.
 
----
-
-## 👋 Hi, I'm @syahronirizki
-
-```ts
-const roni = {
-  name      : "Syahroni Rizki",
-  role      : "Frontend Web Developer",
-  company   : "PT Nuansa Cerah Informasi",
-  education : "Universitas Pembangunan Nasional Veteran Jawa Timur",
-  location  : "Indonesia 🇮🇩",
-  portfolio : "https://business-roni.vercel.app",
-  motto     : "Learning by doing, always improving 🚀",
-};
-```
+I care about the unglamorous half of frontend: does it survive a slow connection, does it fit a 375px screen, can you still read it at arm's length.
 
 ---
 
-## 👀 I'm interested in ...
+### 🔭 What I'm building
 
-- ⚡ **Modern Web Development** — building fast, responsive, and beautiful UIs
-- 🎨 **UI/UX Design** — clean, interactive, and user-first experiences
-- 📱 **Responsive & Accessible Web** — works great on any device
-- 🔧 **Frontend Frameworks** — React.js, Next.js, and modern tooling
-- 🌱 **Continuous Learning** — always picking up new skills
+**A field checklist platform** — three codebases, one product:
 
----
+| Piece | Stack | What it does |
+|---|---|---|
+| Web client | Vue 3 · Quasar · TypeScript | Scroll-locked data grids, offline-tolerant forms, card layouts that fold down for phones |
+| API | TypeScript · Node.js | Submissions, scoring, photo validation |
+| Mobile | Flutter · Dart | The same checklist, in the field, on Android |
 
-## 🌱 I'm currently learning ...
-
-- Advanced **React.js** patterns & state management
-- **Next.js** for full-stack web development
-- **Tailwind CSS** for rapid UI building
-- Performance optimization & web accessibility (a11y)
+Things I actually shipped there recently: a history page rebuilt so only the table scrolls and the rest of the UI stays put, status scoring unified across four views that had quietly drifted apart, and a card mode that replaces the table below 600px.
 
 ---
 
-## 💞️ I'm looking to collaborate on ...
+### 🧰 Tech I reach for
 
-- Open-source frontend projects
-- Creative landing pages & portfolio sites
-- Web apps that have real-world impact
-- UI component libraries
+**Frontend**
 
----
+![Vue](https://img.shields.io/badge/Vue_3-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white) ![Quasar](https://img.shields.io/badge/Quasar-1976D2?style=flat-square&logo=quasar&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwindcss&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 
-## 🛠️ Tech Stack
+**Mobile & backend**
 
-<div align="center">
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) ![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+**Tooling**
 
-</div>
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white) ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
 
 ---
 
-## 📊 GitHub Stats
+### 📊 By the numbers
 
-<div align="center">
+<img src="assets/stats.svg" alt="GitHub activity" /> <img src="assets/langs.svg" alt="Most used languages" />
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=syahronirizki&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=syahronirizki&layout=compact&theme=tokyonight&hide_border=true" />
-
-</div>
-
-<div align="center">
-
-![GitHub Streak](https://streak-stats.demolab.com?user=syahronirizki&theme=tokyonight&hide_border=true)
-
-</div>
+> Most of my commits land in private client repos, so the public graph tells only part of the story. These cards are generated inside this repo by [a small script](scripts/gen_stats.py) on [a daily job](.github/workflows/stats.yml) — no third-party image service to go down on me.
 
 ---
 
-## 🚀 Featured Projects
+### 🚀 Things worth a look
 
-| Project | Description | Tech |
-|--------|-------------|------|
-| 🌐 [**Personal Portfolio**](https://business-roni.vercel.app) | Clean, responsive portfolio with smooth animations | React, Tailwind CSS, Vercel |
+**[Signalbooth](https://github.com/syahronirizki/signalbooth-v2)** — a gesture-controlled VFX camera and photobooth that runs entirely in the browser. Throw a ✌️ and the lens goes soft; 👍 brings confetti and a combo counter. No server, no database — static files and `localStorage`. The interesting part is the language split: JavaScript owns the webcam and MediaPipe hand tracking, the only place a model that fast currently exists, while **Python running client-side via PyScript** does gesture interpretation, the VFX render loop, and all DOM work.
 
-> *More projects coming soon — watch this space! ⭐*
+`Python` `JavaScript` `MediaPipe` `PyScript`
 
----
+**[Meals App](https://github.com/syahronirizki/meals-app)** — Flutter app I'm using to push past the basics: navigation, state, filtering.
 
-## 📫 How to reach me ...
+`Flutter` `Dart`
 
-<div align="center">
+**[Sikest](https://github.com/syahronirizki/sikest)** — Sistem Informasi Kesehatan. My first proper look at how health data actually gets modelled, which is the problem space I ended up working in full time.
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-business--roni.vercel.app-302b63?style=for-the-badge&logo=vercel&logoColor=white)](https://business-roni.vercel.app)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-syahronirizki-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/syahroni-rizki-a79b151b9/)
-[![GitHub](https://img.shields.io/badge/GitHub-syahronirizki-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/syahronirizki)
+`PHP`
 
-</div>
+**[Portfolio](https://business-roni.vercel.app)** — where the more polished frontend work lives.
+
+`React` `Tailwind` `Vercel`
 
 ---
 
-## ⚡ Fun fact ...
+### 🌱 Currently getting better at
 
-> *"Errors love me 😂 — but every bug I fix makes me a better developer. I'm in this for the long run."*
-
-I believe great websites aren't just **built** — they're **crafted**. Step by step, I'm growing not just my code, but my skills, confidence, and creativity. 💪
+- Making data-heavy Vue screens feel instant — virtual scroll, pagination, and knowing when neither is the answer
+- Flutter beyond the tutorials
+- Web accessibility, properly: focus order, contrast, screen-reader labels
+- Writing the test that would have caught the bug, before the bug
 
 ---
 
-<div align="center">
+### 🤝 Open to
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer&animation=fadeIn" />
+Frontend work on Vue or Flutter, open-source UI components, and anything where somebody has to use the thing every single day. Also happy to look at a layout that isn't behaving on mobile — that's most of what I do.
 
-![Visitor Count](https://komarev.com/ghpvc/?username=syahronirizki&color=302b63&style=for-the-badge&label=Profile+Views)
+---
 
-</div>
+### 📫 Reach me
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-business--roni.vercel.app-302b63?style=for-the-badge&logo=vercel&logoColor=white)](https://business-roni.vercel.app) [![LinkedIn](https://img.shields.io/badge/LinkedIn-Syahroni_Rizki-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/syahroni-rizki-a79b151b9/)
+
+---
+
+<sub>🐛 Errors love me. Fine by me — every one I fix is one I'll recognise on sight next time.</sub>
