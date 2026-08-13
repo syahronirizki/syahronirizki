@@ -20,28 +20,48 @@ concurrency:
   group: profile-stats
   cancel-in-progress: true
 
+env:
+  # A classic PAT with `repo` + `read:user`. The built-in GITHUB_TOKEN is the
+  # actions bot, not the account owner, so it cannot see private
+  # contributions — regenerating with it would quietly rewrite the committed
+  # cards with public-only numbers. Without this secret the job no-ops and
+  # leaves the existing cards alone.
+  METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
+      - name: Require METRICS_TOKEN
+        id: gate
+        run: |
+          if [ -z "$METRICS_TOKEN" ]; then
+            echo "::warning::METRICS_TOKEN is not set — leaving the committed cards untouched."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/checkout@v4
+        if: steps.gate.outputs.ready == 'true'
 
       - uses: actions/setup-python@v5
+        if: steps.gate.outputs.ready == 'true'
         with:
           python-version: "3.12"
 
       - name: Verify streak maths
+        if: steps.gate.outputs.ready == 'true'
         run: python3 scripts/gen_stats.py --selfcheck
 
       - name: Generate cards
+        if: steps.gate.outputs.ready == 'true'
         env:
-          # METRICS_TOKEN is a classic PAT with `repo` + `read:user`; it makes
-          # private contributions and private-repo languages count. Without it
-          # the built-in token still works, but only sees public activity.
-          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
         run: python3 scripts/gen_stats.py
 
       - name: Commit if changed
+        if: steps.gate.outputs.ready == 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
