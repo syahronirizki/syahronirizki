@@ -13,13 +13,16 @@ Actions-provided GITHUB_TOKEN only sees public activity.
 import json
 import os
 import sys
+import urllib.error
 import urllib.request
 from datetime import date, timedelta
 from pathlib import Path
 from xml.sax.saxutils import escape
 
 USER = os.environ.get("GH_USER", "syahronirizki")
-TOKEN = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+# .strip(): a token pasted into the secret with a stray newline/space makes
+# every request 401 with no other symptom.
+TOKEN = (os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or "").strip()
 OUT = Path(__file__).resolve().parent.parent / "assets"
 
 BG_FROM, BG_VIA, BG_TO = "#0f0c29", "#302b63", "#24243e"
@@ -80,8 +83,17 @@ def fetch():
             "User-Agent": f"{USER}-profile-stats",
         },
     )
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        payload = json.load(resp)
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            payload = json.load(resp)
+    except urllib.error.HTTPError as err:
+        if err.code == 401:
+            sys.exit(
+                "GitHub rejected the token (401). The METRICS_TOKEN secret is "
+                "expired, revoked, or mistyped. Regenerate a classic PAT with "
+                "`repo` + `read:user` and re-set the secret."
+            )
+        sys.exit(f"GitHub API error {err.code}: {err.reason}")
     if payload.get("errors"):
         sys.exit(f"GraphQL error: {payload['errors']}")
     return payload["data"]["user"]
