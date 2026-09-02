@@ -19,17 +19,17 @@
         stroke="#7c6cf5" stroke-opacity="0.35"/>
   <text x="22" y="34" class="h">Most used languages</text>
   <line x1="22" y1="46" x2="338" y2="46" stroke="#7c6cf5" stroke-opacity="0.3"/>
-  <rect x="22.0" y="64" width="90.3" height="10" rx="5" fill="#3178c6"/>
-  <rect x="114.3" y="64" width="88.2" height="10" rx="5" fill="#41b883"/>
-  <rect x="204.5" y="64" width="59.8" height="10" rx="5" fill="#f1e05a"/>
-  <rect x="266.3" y="64" width="35.4" height="10" rx="5" fill="#00b4ab"/>
-  <rect x="303.7" y="64" width="21.0" height="10" rx="5" fill="#4F5D95"/>
-  <rect x="326.8" y="64" width="9.2" height="10" rx="5" fill="#e34c26"/>
-  <g><circle cx="27" cy="102" r="5" fill="#3178c6"/><text x="40" y="106" class="k">TypeScript</text><text x="168" y="106" class="s" text-anchor="end">29.2%</text></g>
-  <g><circle cx="187" cy="102" r="5" fill="#41b883"/><text x="200" y="106" class="k">Vue</text><text x="328" y="106" class="s" text-anchor="end">28.5%</text></g>
-  <g><circle cx="27" cy="128" r="5" fill="#f1e05a"/><text x="40" y="132" class="k">JavaScript</text><text x="168" y="132" class="s" text-anchor="end">19.6%</text></g>
-  <g><circle cx="187" cy="128" r="5" fill="#00b4ab"/><text x="200" y="132" class="k">Dart</text><text x="328" y="132" class="s" text-anchor="end">11.9%</text></g>
-  <g><circle cx="27" cy="154" r="5" fill="#4F5D95"/><text x="40" y="158" class="k">PHP</text><text x="168" y="158" class="s" text-anchor="end">7.3%</text></g>
-  <g><circle cx="187" cy="154" r="5" fill="#e34c26"/><text x="200" y="158" class="k">HTML</text><text x="328" y="158" class="s" text-anchor="end">3.6%</text></g>
+  <rect x="22.0" y="64" width="104.9" height="10" rx="5" fill="#3178c6"/>
+  <rect x="128.9" y="64" width="85.5" height="10" rx="5" fill="#41b883"/>
+  <rect x="216.4" y="64" width="53.7" height="10" rx="5" fill="#f1e05a"/>
+  <rect x="272.1" y="64" width="32.4" height="10" rx="5" fill="#00b4ab"/>
+  <rect x="306.5" y="64" width="19.2" height="10" rx="5" fill="#4F5D95"/>
+  <rect x="327.7" y="64" width="8.3" height="10" rx="5" fill="#e34c26"/>
+  <g><circle cx="27" cy="102" r="5" fill="#3178c6"/><text x="40" y="106" class="k">TypeScript</text><text x="168" y="106" class="s" text-anchor="end">33.8%</text></g>
+  <g><circle cx="187" cy="102" r="5" fill="#41b883"/><text x="200" y="106" class="k">Vue</text><text x="328" y="106" class="s" text-anchor="end">27.7%</text></g>
+  <g><circle cx="27" cy="128" r="5" fill="#f1e05a"/><text x="40" y="132" class="k">JavaScript</text><text x="168" y="132" class="s" text-anchor="end">17.6%</text></g>
+  <g><circle cx="187" cy="128" r="5" fill="#00b4ab"/><text x="200" y="132" class="k">Dart</text><text x="328" y="132" class="s" text-anchor="end">10.9%</text></g>
+  <g><circle cx="27" cy="154" r="5" fill="#4F5D95"/><text x="40" y="158" class="k">PHP</text><text x="168" y="158" class="s" text-anchor="end">6.7%</text></g>
+  <g><circle cx="187" cy="154" r="5" fill="#e34c26"/><text x="200" y="158" class="k">HTML</text><text x="328" y="158" class="s" text-anchor="end">3.3%</text></g>
   <text x="22" y="214" class="s">Weighted by bytes across public and private repos.</text>
 </svg>
